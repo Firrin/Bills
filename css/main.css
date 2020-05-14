@@ -1,0 +1,477 @@
+body {
+  font-family: 'Montserrat', sans-serif;
+  background-color: #f5f5f5;
+}
+
+/* Font Tittel  */
+.headtext {
+  font-family: 'Yeseva One', cursive;
+  font-size: 6rem;
+  letter-spacing: 0.2rem;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+@media (max-width: 991px) {
+
+.headtext {
+  font-size: 4rem;
+  letter-spacing: 0.1rem;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#contactForm {
+    padding: 0 !important;
+}
+
+ }
+
+ @media (max-width: 667px) {
+
+ .headtext {
+   font-size: 2rem;
+   letter-spacing: 0.1rem;
+   -webkit-font-smoothing: antialiased;
+   -moz-osx-font-smoothing: grayscale;
+ }
+
+ .text-underline {
+    width: 200px !important;
+
+}
+
+#about a {
+  width: 200px !important;
+
+}
+
+.nav-link {
+padding-right: 30px !important;
+
+}
+
+.animated {
+		/*CSS transitions stopper css animate på mobil*/
+		-o-transition-property: none !important;
+		-moz-transition-property: none !important;
+		-ms-transition-property: none !important;
+		-webkit-transition-property: none !important;
+		transition-property: none !important;
+		/*CSS transforms*/
+		-o-transform: none !important;
+		-moz-transform: none !important;
+		-ms-transform: none !important;
+		-webkit-transform: none !important;
+		transform: none !important;
+		/*CSS animations*/
+		-webkit-animation: none !important;
+		-moz-animation: none !important;
+		-o-animation: none !important;
+		-ms-animation: none !important;
+		animation: none !important;
+	}
+
+  }
+
+
+
+
+
+/* Navbar start*/
+/* Burger menu styling  */
+.custom-toggler.navbar-toggler {
+    border-color: rgb(241,117,37);
+}
+
+/* Svg ikon for buger menu  */
+.custom-toggler .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(241,117,37, 1)' stroke-width='2.5' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+.transparent {
+  background: rgba(0, 0,0, 0.4);
+}
+
+.navbar-toggler-icon {
+  padding: 25px;
+}
+
+.nav-link, .navbar-brand {
+  color: #f17525 !important;
+  font-size: 1.4rem;
+}
+
+.navbar a:hover {
+  color: #f5f5f5 !important;
+}
+
+/* Fjerner Bill logo i mobil */
+@media (max-width: 768px) {
+
+  #nav-bill {
+    display: none !important;
+  }
+
+  .transparent {
+    background: rgba(0, 0,0, 0.8);
+}
+
+#footermail {
+  font-size: 1.25rem;
+}
+
+ }
+
+
+
+/*Header billede*/
+header {
+  height: 100vh;
+  background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.4) ), url(../images/header.jpg) fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/*Banner tekst*/
+.banner-center {
+  height: 100vh;
+  color: #f5f5f5;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* Banner linje*/
+.banner-underline {
+  width: 300px;
+  border: 3px solid #f17525;
+  margin: 0px auto 20px;
+}
+
+.banner-center a {
+  font-size: 30px;
+  width: 300px;
+  margin: 0px auto;
+  display: inline-block;
+  border: 3px solid #f5f5f5;
+  color: #f5f5f5;
+  text-decoration: none;
+  border-radius: 25px;
+}
+
+/*banner hover*/
+.banner-center a:hover,
+.banner a:focus {
+  color: #f17525;
+}
+
+/* Margin fra headeren*/
+.title {
+  margin: 50px;
+}
+
+/* SKills linje*/
+.text-underline {
+  width: 300px;
+  border: 2px solid #f17525;
+  margin: 0px auto 20px;
+}
+
+/*Ikoner margin*/
+#skills .fa {
+  margin-bottom: 10px;
+}
+
+/* Skills knapper*/
+#skills a {
+  margin: auto;
+  0px;
+  width: 300px;
+  margin-bottom: 100px;
+  background-color: #f17525;
+  color: #f5f5f5;
+}
+
+/* Hover farve */
+#skills a:hover {
+  background-color: #22252a;
+  transform: translateY(-3px);
+  box-shadow: 0 7px 14px rgba(50,50,93,.1), 0 3px 6px rgba(0,0,0,.08);
+}
+
+#about {
+  background-color: #22252a;
+  color: #f5f5f5;
+  background-position: left;
+  background-repeat: no-repeat;
+  z-index: 10;
+}
+
+#about .pic {
+  height: 600px;
+  border-bottom: 600px solid transparent;
+  border-left: 100px solid #22252a;
+  background: url(../images/about.jpg);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@media (max-width: 991px) {
+/* fix for billede ved skrå boks  */
+#about .pic {
+  border-bottom: 0;
+  border-left: 0;
+  background-attachment: scroll;
+}
+
+ }
+
+#about .box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#about a {
+  margin: auto;
+  0px;
+  width: 300px;
+  margin-bottom: 100px;
+  background-color: #f17525;
+  color: #f5f5f5;
+  margin-top: 20px;
+}
+
+/* Hover farve */
+#about a:hover {
+  background-color: #f5f5f5;
+  color: #22252a;
+  transform: translateY(-3px);
+  box-shadow: 0 7px 14px rgba(50,50,93,.1), 0 3px 6px rgba(0,0,0,.08);
+}
+
+/* Kontakt form*/
+
+#contactForm {
+  padding: 40px;
+  background-color: #f5f5f5;
+
+}
+
+#contact .form-control {
+  border-radius: 10px !important;
+  font-size: 24px;
+
+}
+
+.alert-success {
+  color: #f17525;
+  background-color: #ffffff;
+  border-color: #ffffff;
+}
+
+#contact button {
+  font-size: 24px;
+  background-color:  #f17525;
+}
+
+#contact button:hover {
+  background-color: #22252a;
+  transform: translateY(3px);
+  box-shadow: 0 7px 14px rgba(50,50,93,.1), 0 3px 6px rgba(0,0,0,.08);
+}
+
+#comments {
+  height: 150px;
+}
+
+/* Footer */
+
+#footer {
+  background: url(../images/coffee.png);
+  background-repeat: no-repeat;
+  background-position: left;
+  padding: 40px;
+  color: #f5f5f5;
+  background-color: #22252a;
+}
+
+#footer .footer-icons {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+#footer .footer-icons a {
+  color: #f17525;
+  text-decoration: none;
+}
+
+#footer .footer-icons a:hover {
+  color: #f5f5f5;
+}
+
+.footer-line {
+    width: 200px;
+    border: 1px solid #f17525;
+    margin: 0px auto 20px;
+}
+
+
+/* Google map */
+.map-responsive {
+  display: flex;
+  justify-content: center;
+  background-color: #f5f5f5;
+}
+
+/* Google map */
+#google {
+  padding: 0;
+  padding-right: 0px;
+  padding-left: 0px;
+  margin-bottom: 70px;
+}
+
+#googlerow {
+  background-color: #f5f5f5;
+}
+
+@media (max-width: 991px) {
+
+  #google {
+    margin-bottom: 0px;
+  }
+}
+
+.scrollup {
+  display: flex;
+  justify-content: flex-end;
+  text-decoration: none;
+  color: #f17525;
+
+}
+
+.scrollup:hover {
+  color: #f5f5f5;
+  text-decoration: none;
+}
+
+.menu-coffee {
+  background: url(../images/menukort/menukorthead.webp);
+  height: 35vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.drinks-menu {
+  background: url(../images/menukort/andredrikke.webp);
+  height: 35vh;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.food-menu {
+  background: url(../images/menukort/kager.webp);
+  height: 35vh;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.title-menu {
+  font-size: 10vh;
+
+}
+
+.menu-item {
+  margin: 35px 0;
+  font-size: 18px;
+  font-size: 2.5vh;
+  line-height: 100% !important;
+}
+
+.menu-item-price {
+  float: right;
+  font-weight: bold;
+  margin-top: -22px;
+  font-size: 2.5vh;
+  line-height: 100% !important;
+}
+
+.menu-item-name {
+  line-height: 100% !important;
+  border-bottom: 2px dotted rgb(213, 213, 213);
+}
+
+.menu-underline {
+  width: 35vh;
+  border: 3px solid #f17525;
+  margin: 0px auto 20px;
+}
+
+.padding-menu-left {
+  padding-right: 15%;
+}
+
+.padding-menu-right {
+  padding-left: 15%;
+}
+
+@media (max-width: 991px) {
+
+  .padding-menu-left {
+    padding-left: 15%;
+  }
+
+  .padding-menu-right {
+    padding-right: 15%;
+}
+
+ }
+
+
+
+
+
+/* Kontakt side starter her - Header billede*/
+#kontaktheader {
+  height: 35vh;
+  background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.4) ), url(../images/kontakt.png) fixed;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+/* Instagram billeder på galleri siden  */
+.instaimg img {margin-bottom:30px;}
+.instaimg img:hover {
+	opacity:0.8;
+	-moz-opacity:0.8;
+	-webkit-opacity:0.8;
+}
+
+
+/* Galleri side - Header billede*/
+#gallerihead {
+  height: 35vh;
+  background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.4) ), url(../images/gallerihead.jpeg) ;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.about-coffee{
+  height: 35vh;
+  background: url(../images/omos.jpeg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
